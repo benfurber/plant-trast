@@ -28,26 +28,26 @@ Run `npm run build` to create static site ready to host (`/public`)
 
 ## What's inside?
 
--   [ ] Gatsby 2.0 (alpha)
-    -   [x] sharp
-    -   [x] offline support
-    -   [ ] google analytics
-    -   [x] manifest
-    -   [x] typescript
-    -   [x] blog in markdown
--   [x] Best practices tools
-    -   [x] [Jest](https://facebook.github.io/jest/) / [Enzyme](http://airbnb.io/enzyme/)
-    -   [x] [Typescript](https://www.typescriptlang.org/) / [tslint](https://palantir.github.io/tslint/)
-    -   [x] [xo linter](https://github.com/sindresorhus/xo)
-    -   [x] [Remark-lint](https://github.com/wooorm/remark-lint)
-    -   [x] [Husky](https://github.com/typicode/husky) & [lint-staged](https://github.com/okonet/lint-staged) for autofix each commit
-    -   [x] Travis/AppVeyor config (unix-osx-windows CI)
-    -   [x] Code climate config
--   [x] SEO
-    -   [x] [Helmet](https://github.com/nfl/react-helmet)
--   [x] [Semantic-ui](http://react.semantic-ui.com) for styling
--   [x] Lazyboy tools
-    -   [x] [plop](https://github.com/amwmedia/plop) templates -> `npm run generate`
+- [ ] Gatsby 2.0 (alpha)
+  - [x] sharp
+  - [x] offline support
+  - [ ] google analytics
+  - [x] manifest
+  - [x] typescript
+  - [x] blog in markdown
+- [x] Best practices tools
+  - [x] [Jest](https://facebook.github.io/jest/) / [Enzyme](http://airbnb.io/enzyme/)
+  - [x] [Typescript](https://www.typescriptlang.org/) / [tslint](https://palantir.github.io/tslint/)
+  - [x] [xo linter](https://github.com/sindresorhus/xo)
+  - [x] [Remark-lint](https://github.com/wooorm/remark-lint)
+  - [x] [Husky](https://github.com/typicode/husky) & [lint-staged](https://github.com/okonet/lint-staged) for autofix each commit
+  - [x] Travis/AppVeyor config (unix-osx-windows CI)
+  - [x] Code climate config
+- [x] SEO
+  - [x] [Helmet](https://github.com/nfl/react-helmet)
+- [x] [Semantic-ui](http://react.semantic-ui.com) for styling
+- [x] Lazyboy tools
+  - [x] [plop](https://github.com/amwmedia/plop) templates -> `npm run generate`
 
 ## Files structure
 

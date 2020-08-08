@@ -8,8 +8,6 @@
 
 Demo: <https://fabien0102-gatsby-starter.netlify.com/>
 
-Storybook: <https://fabien0102-gatsby-starter.netlify.com/docs/>
-
 Gatsby 2.0 starter for generate awesome static website working with a nice env development.
 
 ## Warning
@@ -39,7 +37,6 @@ Run `npm run build` to create static site ready to host (`/public`)
     -   [x] blog in markdown
 -   [x] Best practices tools
     -   [x] [Jest](https://facebook.github.io/jest/) / [Enzyme](http://airbnb.io/enzyme/)
-    -   [x] [Storybook](https://storybooks.js.org/)
     -   [x] [Typescript](https://www.typescriptlang.org/) / [tslint](https://palantir.github.io/tslint/)
     -   [x] [xo linter](https://github.com/sindresorhus/xo)
     -   [x] [Remark-lint](https://github.com/wooorm/remark-lint)

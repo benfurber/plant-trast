@@ -31,19 +31,24 @@ const IndexLayout: React.FC = ({ children }) => (
         }
       }
     `}
-    render={(data: StaticQueryProps) => (
-      <LayoutRoot>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: data.site.siteMetadata.description },
-            { name: 'keywords', content: data.site.siteMetadata.keywords }
-          ]}
-        />
-        <Header title={data.site.siteMetadata.title} />
-        <LayoutMain>{children}</LayoutMain>
-      </LayoutRoot>
-    )}
+    render={(data: StaticQueryProps) => {
+      const { description, keywords, title } = data.site.siteMetadata
+      const extendedTitle = `${title} - ${description}`
+
+      return (
+        <LayoutRoot>
+          <Helmet
+            title={extendedTitle}
+            meta={[
+              { name: 'description', content: description },
+              { name: 'keywords', content: keywords }
+            ]}
+          />
+          <Header title={extendedTitle} />
+          <LayoutMain>{children}</LayoutMain>
+        </LayoutRoot>
+      )
+    }}
   />
 )
 

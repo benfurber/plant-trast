@@ -1,14 +1,9 @@
 {
-  "name": "gatsby-starter-typescript-plus",
-  "description": "A starter kit for TypeScript-based Gatsby projects with sensible defaults.",
-  "version": "1.0.0",
+  "name": "Plant-trast",
+  "description": "Compare & Contrast Plant Subscriptions",
+  "version": "0.0.1",
   "private": true,
-  "author": "Resi Respati <resir014@gmail.com>",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
+  "author": "Ben Furber <ben@fu.rber.io>",
   "scripts": {
     "build": "gatsby build",
     "clean": "rimraf public",

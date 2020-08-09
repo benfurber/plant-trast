@@ -44,7 +44,7 @@ const IndexLayout: React.FC = ({ children }) => (
               { name: 'keywords', content: keywords }
             ]}
           />
-          <Header title={extendedTitle} />
+          <Header />
           <LayoutMain>{children}</LayoutMain>
         </LayoutRoot>
       )

@@ -2,6 +2,8 @@ import { dimensions, fonts, colors, breakpoints } from './variables'
 import { getEmSize } from './mixins'
 
 export default `
+  @import url('https://fonts.googleapis.com/css2?family=Kreon&display=swap')
+
   html {
     box-sizing: border-box;
   }
@@ -87,6 +89,7 @@ export default `
     margin-top: 1.414rem;
     margin-bottom: .5rem;
     color: ${colors.black};
+    font-family: "Kreon";
     font-weight: 600;
     line-height: ${dimensions.lineHeight.heading};
     text-rendering: optimizeLegibility;

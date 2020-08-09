@@ -1,7 +1,5 @@
-/* eslint-disable max-len */
-
 export const colors = {
-  brand: '#663399',
+  brand: '#0C5317',
   lilac: '#9d7cbf',
   accent: '#ffb238',
   success: '#37b635',
@@ -13,7 +11,7 @@ export const colors = {
   },
   code: '#fcf6f0',
   gray: {
-    dark: 'hsla(270, 17.119554496%, 0%, 0.92)',
+    dark: '#111',
     copy: 'hsla(270, 15.797828016000002%, 0%, 0.88)',
     calm: 'rgba(0, 0, 0, 0.54)'
   },
@@ -22,8 +20,7 @@ export const colors = {
 }
 
 export const fonts = {
-  sansSerif:
-    '-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif',
+  sansSerif: '"Roboto" sans-serif',
   serif: 'Georgia, "Times New Roman", Times, serif',
   monospace: 'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace'
 }
@@ -48,6 +45,7 @@ export const dimensions = {
     large: 18
   },
   headingSizes: {
+    h0: 4.7,
     h1: 2.441,
     h2: 1.953,
     h3: 1.563,
@@ -62,4 +60,8 @@ export const dimensions = {
 
 export const heights = {
   header: 60
+}
+
+export const spacing = {
+  small: 0.25
 }

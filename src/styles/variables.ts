@@ -45,11 +45,12 @@ export const dimensions = {
     large: 18
   },
   headingSizes: {
-    h0: 4.7,
+    h0: 4.2,
     h1: 2.441,
     h2: 1.953,
     h3: 1.563,
-    h4: 1.25
+    h4: 1.25,
+    h5: 1.1
   },
   lineHeight: {
     regular: 1.45,

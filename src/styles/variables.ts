@@ -10,6 +10,7 @@ export const colors = {
     whisper: '#fbfafc'
   },
   code: '#fcf6f0',
+  offWhite: '#F6F6F8',
   gray: {
     dark: '#111',
     copy: 'hsla(270, 15.797828016000002%, 0%, 0.88)',

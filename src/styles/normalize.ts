@@ -20,12 +20,15 @@ export default `
   }
 
   body {
+    background-color: ${colors.offWhite};
+    background-image: url('/images/background.jpg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
     font-family: ${fonts.sansSerif};
     color: ${colors.black};
-    background-color: ${colors.white};
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
   }

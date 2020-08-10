@@ -1,24 +1,23 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
+import { Container, Col, Row } from 'react-grid-system'
 
-import { Container, Logo } from '.'
+import { Logo } from '.'
 import { dimensions } from '../styles/variables'
 
 const StyledHeader = styled.header`
-  padding: 0 ${dimensions.containerPadding}rem;
-`
-
-const HeaderInner = styled(Container)`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  padding: ${dimensions.containerPadding}rem 0;
 `
 
 const Header: React.FC = () => (
   <StyledHeader>
-    <HeaderInner>
-      <Logo />
-    </HeaderInner>
+    <Container>
+      <Row justify="center">
+        <Col sm={10}>
+          <Logo />
+        </Col>
+      </Row>
+    </Container>
   </StyledHeader>
 )
 

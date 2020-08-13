@@ -1,5 +1,6 @@
 export const colors = {
   brand: '#0C5317',
+  brandTransparent: 'rgba(12,83,23,0.5)',
   lilac: '#9d7cbf',
   accent: '#ffb238',
   success: '#37b635',

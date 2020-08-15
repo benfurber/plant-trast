@@ -3,6 +3,7 @@ import { getEmSize } from './mixins'
 
 export default `
   @import url('https://fonts.googleapis.com/css2?family=Kreon&display=swap')
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
 
   html {
     box-sizing: border-box;
@@ -27,7 +28,7 @@ export default `
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: ${fonts.sansSerif};
+    font-family: ${fonts.body};
     color: ${colors.black};
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -92,7 +93,7 @@ export default `
     margin-top: 1.414rem;
     margin-bottom: .5rem;
     color: ${colors.black};
-    font-family: "Kreon";
+    font-family: ${fonts.titles};
     font-weight: 600;
     line-height: ${dimensions.lineHeight.heading};
     text-rendering: optimizeLegibility;

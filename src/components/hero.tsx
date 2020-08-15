@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 import { Col, Row } from 'react-grid-system'
 import { Container } from '.'
-import { colors } from '../styles/variables'
+import { colors, dimensions, fonts } from '../styles/variables'
 
 const height = '280px'
 
@@ -11,9 +11,17 @@ const Column = styled(Col)`
   background: ${colors.brandTransparent};
 `
 
-const Title = styled(Col)`
-  text-align: center;
+const Title = styled.span`
   color: ${colors.white};
+  font-family: ${fonts.titles};
+  font-size: ${dimensions.headingSizes.h1}rem;
+  p {
+    white-space: pre-line;
+  }
+`
+
+const TitleWrapper = styled(Col)`
+  text-align: center;
 `
 
 interface Props {
@@ -29,7 +37,11 @@ const Hero = (props: Props) => {
       <Row align="center" style={{ background: `url(${imageUrl})` }}>
         <Column style={{ background: colors.brandTransparent }}>
           <Row align="center" style={{ height }}>
-            <Title>{title}</Title>
+            <TitleWrapper>
+              <Title>
+                <p>{title}</p>
+              </Title>
+            </TitleWrapper>
           </Row>
         </Column>
       </Row>

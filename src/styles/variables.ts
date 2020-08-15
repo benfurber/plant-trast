@@ -22,9 +22,8 @@ export const colors = {
 }
 
 export const fonts = {
-  sansSerif: '"Roboto" sans-serif',
-  serif: 'Georgia, "Times New Roman", Times, serif',
-  monospace: 'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace'
+  body: '"Roboto", sans-serif',
+  titles: '"Kreon", serif'
 }
 
 export const breakpoints = {

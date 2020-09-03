@@ -2,9 +2,6 @@ import { dimensions, fonts, colors, breakpoints } from './variables'
 import { getEmSize } from './mixins'
 
 export default `
-  @import url('https://fonts.googleapis.com/css2?family=Kreon&display=swap')
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
-
   html {
     box-sizing: border-box;
   }

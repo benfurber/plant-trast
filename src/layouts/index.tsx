@@ -41,6 +41,13 @@ const IndexLayout: React.FC = ({ children }) => (
       return (
         <LayoutRoot>
           <Helmet
+            link={[
+              {
+                href:
+                  'https://fonts.googleapis.com/css2?family=Kreon&family=Roboto&display=swap',
+                rel: 'stylesheet'
+              }
+            ]}
             title={extendedTitle}
             meta={[
               { name: 'description', content: description },

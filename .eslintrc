@@ -21,6 +21,7 @@
   "rules": {
     "max-len": ["error", { "code": 80, "ignoreUrls": true }],
     "import/prefer-default-export": "off",
+    "import/no-cycle": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "react/no-unescaped-entities": [
       "error",

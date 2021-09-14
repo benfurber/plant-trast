@@ -9,7 +9,10 @@ const IndexPage = () => (
   <IndexLayout>
     <Page>
       <Container>
-        <Hero imageUrl="./images/hero/home.jpg" title="Easily find the perfect plant subscription for you" />
+        <Hero
+          imageUrl="./images/hero/home.jpg"
+          title="Easily find the perfect plant subscription for you"
+        />
         <h1>Hi people</h1>
         <p>Welcome to your new Gatsby site.</p>
         <p>Now go build something great.</p>

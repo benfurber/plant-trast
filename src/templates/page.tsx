@@ -4,28 +4,6 @@ import { graphql } from 'gatsby'
 import { Container, Page } from '../components'
 import IndexLayout from '../layouts'
 
-interface PageTemplateProps {
-  data: {
-    site: {
-      siteMetadata: {
-        title: string
-        description: string
-        author: {
-          name: string
-          url: string
-        }
-      }
-    }
-    markdownRemark: {
-      html: string
-      excerpt: string
-      frontmatter: {
-        title: string
-      }
-    }
-  }
-}
-
 const PageTemplate: React.FC<PageTemplateProps> = ({ data }) => (
   <IndexLayout>
     <Page>

@@ -1,7 +1,6 @@
 import * as React from 'react'
 
-import Page from '../components/Page'
-import { CategoryList, Container, Hero } from '../components'
+import { CategoryList, Container, Hero, Page } from '../components'
 import IndexLayout from '../layouts'
 
 const IndexPage = () => (

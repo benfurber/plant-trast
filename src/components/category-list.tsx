@@ -16,6 +16,7 @@ const CategoryList: FC = () => (
         <CategoryItem
           label="Pet Friendly"
           imagePath="./images/category/pet-friendly.jpg"
+          slug="pet-friendly"
         />
       </Row>
     </Container>

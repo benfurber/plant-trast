@@ -9,6 +9,7 @@ import { colors, fonts } from '../styles/variables'
 interface Props {
   label: string
   imagePath: string
+  slug: string
 }
 
 const Category = styled.div`
@@ -26,18 +27,18 @@ const Text = styled.div`
   padding: 1em;
 `
 
-const CategoryItem: FC<Props> = ({ label, imagePath }) => (
+const CategoryItem: FC<Props> = ({ label, imagePath, slug }) => (
   <Col lg={3}>
-    <Link to="">
-      <Category
-        style={{
-          backgroundImage: `url(${imagePath})`,
-          backgroundSize: 'cover'
-        }}
-      >
-        <Text>{label}</Text>
-      </Category>
-    </Link>
+    <Category
+      style={{
+        backgroundImage: `url(${imagePath})`,
+        backgroundSize: 'cover'
+      }}
+    >
+      <Text>
+        <Link to={`/categories/${slug}`}>{label}</Link>
+      </Text>
+    </Category>
   </Col>
 )
 

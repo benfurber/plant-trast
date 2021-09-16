@@ -68,3 +68,15 @@ interface PageTemplateProps {
     }
   }
 }
+
+interface CategoryTemplateProps {
+  data: {
+    markdownRemark: {
+      html: string
+      excerpt: string
+      frontmatter: {
+        title: string
+      }
+    }
+  }
+}

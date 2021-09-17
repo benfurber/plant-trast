@@ -15,9 +15,12 @@ const Title = styled.span`
   color: ${colors.white};
   font-family: ${fonts.titles};
   font-size: ${dimensions.headingSizes.h1}rem;
-  p {
-    white-space: pre-line;
-  }
+`
+
+const SubTitle = styled.span`
+  color: ${colors.white};
+  font-family: ${fonts.titles};
+  font-size: ${dimensions.headingSizes.h2}rem;
 `
 
 const TitleWrapper = styled(Col)`
@@ -27,10 +30,11 @@ const TitleWrapper = styled(Col)`
 interface Props {
   imageUrl: string
   title: string
+  subTitle?: string
 }
 
 const Hero = (props: Props) => {
-  const { imageUrl, title } = props
+  const { imageUrl, subTitle, title } = props
 
   return (
     <Container fluid>
@@ -41,6 +45,9 @@ const Hero = (props: Props) => {
               <Title>
                 <p>{title}</p>
               </Title>
+              <SubTitle>
+                <p>{subTitle}</p>
+              </SubTitle>
             </TitleWrapper>
           </Row>
         </Column>

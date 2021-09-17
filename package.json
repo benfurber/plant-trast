@@ -47,7 +47,7 @@
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-grid-system": "^7.0.3",
+    "react-grid-system": "7.3.1",
     "react-helmet": "^5.2.1",
     "typescript": "^3.5.2"
   },

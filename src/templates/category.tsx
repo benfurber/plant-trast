@@ -11,6 +11,7 @@ const CategoryTemplate: React.FC<CategoryTemplateProps> = ({ data }) => (
         <Hero
           imageUrl="./images/hero/home.jpg"
           title={data.markdownRemark.frontmatter.title}
+          subTitle={data.markdownRemark.frontmatter.subTitle}
         />
       </Container>
     </Page>
@@ -25,6 +26,7 @@ export const query = graphql`
       html
       excerpt
       frontmatter {
+        subTitle
         title
       }
     }

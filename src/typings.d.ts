@@ -63,6 +63,7 @@ interface PageTemplateProps {
       html: string
       excerpt: string
       frontmatter: {
+        subTitle: string
         title: string
       }
     }

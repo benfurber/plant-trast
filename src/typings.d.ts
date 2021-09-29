@@ -20,7 +20,7 @@ declare module '*.svg' {
 
 // Main data types
 
-type CategoryList = Category
+type CategoryList = Array<Category>
 
 interface Category {
   label: string

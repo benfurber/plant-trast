@@ -82,9 +82,11 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
 
-  createPage({
-    path: `categories/${categoryList.slug}`,
-    component: require.resolve('./src/pages/category.tsx'),
-    context: { ...categoryList }
-  })
+  categoryList.forEach(category =>
+    createPage({
+      path: `categories/${category.slug}`,
+      component: require.resolve('./src/pages/category.tsx'),
+      context: { ...category }
+    })
+  )
 }

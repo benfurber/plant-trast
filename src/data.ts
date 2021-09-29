@@ -24,9 +24,17 @@ export const subscriptions: Subscriptions = [
   }
 ]
 
-export const categoryList: CategoryList = {
-  label: 'Pet Friendly',
-  imagePath: './images/category/pet-friendly.jpg',
-  slug: 'pet-friendly',
-  subTitle: 'Non-toxic to cats and dogs'
-}
+export const categoryList: CategoryList = [
+  {
+    label: 'Large plants',
+    imagePath: './images/categories/large-plants.jpg',
+    slug: 'large-plants',
+    subTitle: 'Plants for pots sized 17cm+'
+  },
+  {
+    label: 'Pet Friendly',
+    imagePath: './images/categories/pet-friendly.jpg',
+    slug: 'pet-friendly',
+    subTitle: 'Non-toxic to cats and dogs'
+  }
+]

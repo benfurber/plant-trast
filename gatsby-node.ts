@@ -1,4 +1,4 @@
-const path = require('path')
+import path from 'path'
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions

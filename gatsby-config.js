@@ -1,4 +1,6 @@
-module.exports = {
+const { useGatsbyConfig } = require('gatsby-plugin-ts-config')
+
+const opts = {
   siteMetadata: {
     title: 'Plant-trast',
     description: 'Compare & Contrast Plant Subscriptions',
@@ -64,3 +66,5 @@ module.exports = {
     }
   ]
 }
+
+module.exports = useGatsbyConfig(() => opts)

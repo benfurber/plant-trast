@@ -23,6 +23,8 @@
     "import/prefer-default-export": "off",
     "import/no-cycle": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/no-unescaped-entities": [
       "error",
       {
@@ -31,6 +33,7 @@
           { "char": "}", "alternatives": ["&#125;"] }
         ]
       }
-    ]
+    ],
+    "react/require-default-props": "off"
   }
 }

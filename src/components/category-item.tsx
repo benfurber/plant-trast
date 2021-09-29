@@ -6,12 +6,6 @@ import { Col } from 'react-grid-system'
 
 import { colors, fonts } from '../styles/variables'
 
-interface Props {
-  label: string
-  imagePath: string
-  slug: string
-}
-
 const Category = styled.div`
   align-items: 'stretch';
   background-color: ${colors.brand};
@@ -27,7 +21,7 @@ const Text = styled.div`
   padding: 1em;
 `
 
-const CategoryItem: FC<Props> = ({ label, imagePath, slug }) => (
+const CategoryItem: FC<Category> = ({ label, imagePath, slug }) => (
   <Col lg={3}>
     <Category
       style={{

@@ -23,3 +23,10 @@ export const subscriptions: Subscriptions = [
     }
   }
 ]
+
+export const categoryList: CategoryList = {
+  label: 'Pet Friendly',
+  imagePath: './images/category/pet-friendly.jpg',
+  slug: 'pet-friendly',
+  subTitle: 'Non-toxic to cats and dogs'
+}

@@ -1,4 +1,5 @@
 import path from 'path'
+import { categoryList } from './src/data'
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
@@ -79,5 +80,11 @@ exports.createPages = async ({ graphql, actions }) => {
         slug
       }
     })
+  })
+
+  createPage({
+    path: `categories/${categoryList.slug}`,
+    component: require.resolve('./src/pages/category.tsx'),
+    context: { ...categoryList }
   })
 }

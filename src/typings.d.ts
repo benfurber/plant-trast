@@ -18,6 +18,17 @@ declare module '*.svg' {
   export default content
 }
 
+// Main data types
+
+type CategoryList = Category
+
+interface Category {
+  label: string
+  imagePath: string
+  slug: string
+  subTitle: string
+}
+
 interface Subscription {
   company: string
   description: string

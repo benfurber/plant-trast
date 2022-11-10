@@ -1,6 +1,0 @@
-export { CategoryItem } from './category-item'
-export { CategoryList } from './category-list'
-export { Container } from './container'
-export { Hero } from './hero'
-export { Logo } from './logo'
-export { Page } from './Page'

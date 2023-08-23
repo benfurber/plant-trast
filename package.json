@@ -52,6 +52,7 @@
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@types/react-helmet": "^6.1.5",
-    "cypress": "^12.17.4"
+    "cypress": "^12.17.4",
+    "cypress-plugin-steps": "^1.1.1"
   }
 }

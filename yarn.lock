@@ -5461,6 +5461,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cypress-plugin-steps@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "cypress-plugin-steps@npm:1.1.1"
+  peerDependencies:
+    cypress: ">=10"
+  checksum: e62c8322cff3fc0c03f4cf978d623c86eed0964a7eb236d632cce1a8e1a715f640d1cc765dade7a6024c300ee893035f42262a672e01c8d5ab6dd6709a6eff4b
+  languageName: node
+  linkType: hard
+
 "cypress@npm:^12.17.4":
   version: 12.17.4
   resolution: "cypress@npm:12.17.4"
@@ -10453,6 +10462,7 @@ __metadata:
     "@types/react-dom": ^18.2.7
     "@types/react-helmet": ^6.1.5
     cypress: ^12.17.4
+    cypress-plugin-steps: ^1.1.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-grid-system: ^8.1.6

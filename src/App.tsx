@@ -5,7 +5,7 @@ import { setConfiguration } from "react-grid-system";
 import Helmet from "react-helmet";
 
 import normalize from "./styles/normalize";
-import { Header } from "./components";
+import { Body, Header } from "./components";
 
 setConfiguration({ maxScreenClass: "xl" });
 
@@ -28,6 +28,7 @@ function App() {
       />
       <Global styles={() => css(normalize)} />
       <Header />
+      <Body />
     </RootLayout>
   );
 }

@@ -1,8 +1,8 @@
 export const colors = {
   brand: "#0C5317",
   brandTransparent: "rgba(12,83,23,0.5)",
-  lilac: "#9d7cbf",
-  accent: "#ffb238",
+  accent: "#7CA64C",
+  accentTransparent: "rgba(124, 166, 76, 0.75)",
   success: "#37b635",
   warning: "#ec1818",
   ui: {
@@ -13,9 +13,8 @@ export const colors = {
   code: "#fcf6f0",
   offWhite: "#F6F6F8",
   gray: {
-    dark: "#111",
-    copy: "hsla(270, 15.797828016000002%, 0%, 0.88)",
     calm: "rgba(0, 0, 0, 0.54)",
+    light: "#eee"
   },
   white: "#fff",
   whiteTransparent: "rgba(255,255,255,0.75)",
@@ -59,6 +58,7 @@ export const dimensions = {
     heading: 1.2,
   },
   containerPadding: 1.5,
+  componentPadding: 1,
 };
 
 export const heights = {

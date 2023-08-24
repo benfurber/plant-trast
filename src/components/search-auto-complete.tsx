@@ -46,7 +46,7 @@ export const SearchAutoComplete = (props: IProps) => {
                 style,
               })}
             >
-              <a>{item.label}</a>
+              <a>{`${item.label} (${item.plantCount})`}</a>
             </li>
           ))}
         </ul>

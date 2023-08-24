@@ -13,7 +13,7 @@ interface IProps {
 
 const { componentPadding } = dimensions;
 const { accent, accentTransparent, black } = colors;
-const StyledButton = styled('button')`
+const StyledButton = styled("button")`
   background-color: ${accent};
   border: 0;
   color: ${black};
@@ -38,7 +38,15 @@ export const SearchButton = (props: IProps) => {
   };
 
   if (isSubmittable) {
-    return <StyledButton onClick={handleOnClick}>{LABEL}</StyledButton>;
+    return (
+      <StyledButton data-cy="search-button" onClick={handleOnClick}>
+        {LABEL}
+      </StyledButton>
+    );
   }
-  return <StyledButton disabled>{LABEL}</StyledButton>;
+  return (
+    <StyledButton data-cy="search-button" disabled>
+      {LABEL}
+    </StyledButton>
+  );
 };

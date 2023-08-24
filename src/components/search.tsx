@@ -43,7 +43,7 @@ export const Search = (props: IProps) => {
 
           return (
             <>
-              <Col sm={7} {...getRootProps({}, { suppressRefError: true })}>
+              <Col sm={8} {...getRootProps({}, { suppressRefError: true })}>
                 <SearchField
                   isSubmittable={isSubmittable}
                   getInputProps={getInputProps}

@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 
 import { Body, PlantList, Search } from ".";
 import { tags } from "../data/tags";
+import { Col, Row } from "react-grid-system";
 
 export const TagPage = () => {
   const { slug } = useParams();
@@ -15,10 +16,15 @@ export const TagPage = () => {
   return (
     <Body>
       <Search initialValue={tag.label} />
-      <h1 data-cy="tag-title">
-        {label} ({plantCount})
-      </h1>
-      <PlantList plantIds={plantIds} />
+      <Row justify="center">
+        <Col sm={10}>
+          <h3 data-cy="tag-title">
+            {label} ({plantCount})
+          </h3>
+          
+          <PlantList plantIds={plantIds} />
+        </Col>
+      </Row>
     </Body>
   );
 };

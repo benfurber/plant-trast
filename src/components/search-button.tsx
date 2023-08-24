@@ -1,51 +1,37 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
 import { colors, dimensions } from "../styles/variables";
 
 import type { ITag } from "../types";
 
-type Event = React.FormEvent<HTMLButtonElement>;
 interface IProps {
   isSubmittable: boolean;
   submitValue: ITag | undefined;
 }
 
-const { componentPadding } = dimensions;
-const { accent, accentTransparent, black } = colors;
-const StyledButton = styled("button")`
-  background-color: ${accent};
-  border: 0;
-  color: ${black};
-  padding: ${componentPadding}rem;
-  width: 100% !important;
-  cursor: pointer;
-
-  &:disabled {
-    background-color: ${accentTransparent};
-    cursor: not-allowed;
-  }
-`;
-
 const LABEL = "Search Plants";
 
 export const SearchButton = (props: IProps) => {
   const { isSubmittable, submitValue } = props;
+  const to = submitValue ? `/tag/${submitValue.slug}` : "";
 
-  const handleOnClick = (event: Event) => {
-    event.preventDefault();
-    console.log(submitValue && submitValue.slug);
-  };
+  const { componentPadding } = dimensions;
+  const { accent, accentTransparent, black, gray } = colors;
 
-  if (isSubmittable) {
-    return (
-      <StyledButton data-cy="search-button" onClick={handleOnClick}>
-        {LABEL}
-      </StyledButton>
-    );
-  }
+  const StyledButton = styled(Link)`
+    background-color: ${isSubmittable ? accent : accentTransparent};
+    border: 0;
+    color: ${isSubmittable ? black : gray.calm};
+    display: flex;
+    padding: ${componentPadding}rem;
+    justify-content: center;
+    width: 100% !important;
+  `;
+
   return (
-    <StyledButton data-cy="search-button" disabled>
+    <StyledButton data-cy="search-button" to={to}>
       {LABEL}
     </StyledButton>
   );

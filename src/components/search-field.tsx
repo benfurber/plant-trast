@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 
 import { dimensions } from "../styles/variables";
 
-import type { PropGetters } from "downshift"
+import type { PropGetters } from "downshift";
 
 const { componentPadding } = dimensions;
 const StyledInput = styled.input`
@@ -23,8 +23,9 @@ export const SearchField = (props: IProps) => {
 
   return (
     <StyledInput
-      style={extraStyle}
       data-cy="search-field"
+      placeholder="Type in a plant word, any plant word..."
+      style={extraStyle}
       {...getInputProps()}
     />
   );

@@ -3,6 +3,7 @@ export { ErrorPage } from "./error-page";
 export { Header } from "./header";
 export { Home } from "./home";
 export { Logo } from "./logo";
+export { PlantItem } from "./plant-item";
 export { PlantList } from "./plant-list";
 export { RouterProvider } from "./router-provider";
 export { Search } from "./search";

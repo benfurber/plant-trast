@@ -3,18 +3,9 @@ import { Global, css } from "@emotion/react";
 import styled from "@emotion/styled";
 import { setConfiguration } from "react-grid-system";
 import Helmet from "react-helmet";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import normalize from "./styles/normalize";
-import { Header, Home, ErrorPage } from "./components";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    errorElement: <ErrorPage />,
-  },
-]);
+import { Header, RouterProvider } from "./components";
 
 setConfiguration({ maxScreenClass: "xl" });
 const RootLayout = styled.div`
@@ -36,7 +27,7 @@ function App() {
       />
       <Global styles={() => css(normalize)} />
       <Header />
-      <RouterProvider router={router} />
+      <RouterProvider />
     </RootLayout>
   );
 }

@@ -3,6 +3,7 @@ export { ErrorPage } from "./error-page";
 export { Header } from "./header";
 export { Home } from "./home";
 export { Logo } from "./logo";
+export { RouterProvider } from "./router-provider";
 export { Search } from "./search";
 export { SearchAutoComplete } from "./search-auto-complete";
 export { SearchButton } from "./search-button";

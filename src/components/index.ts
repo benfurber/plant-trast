@@ -1,5 +1,6 @@
 export { Body } from "./body";
 export { Header } from "./header";
+export { Home } from "./home";
 export { Logo } from "./logo";
 export { Search } from "./search";
 export { SearchAutoComplete } from "./search-auto-complete";

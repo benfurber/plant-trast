@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import { Container } from "react-grid-system";
 
 import { dimensions } from "../styles/variables";
-import { Search } from "./search";
 
 const { containerPadding } = dimensions;
 
@@ -11,11 +10,15 @@ const StyledBody = styled.div`
   padding: ${containerPadding}rem 0;
 `;
 
-export const Body = () => {
+interface IProps {
+  children: JSX.Element | JSX.Element[]
+}
+
+export const Body = (props: IProps) => {
   return (
     <StyledBody>
       <Container>
-        <Search />
+        {props.children}
       </Container>
     </StyledBody>
   );

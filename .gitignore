@@ -13,6 +13,9 @@
 # production
 /build
 
+# data
+/src/data/tags.ts
+
 # misc
 .DS_Store
 .env.local

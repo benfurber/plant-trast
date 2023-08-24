@@ -7,7 +7,12 @@ import { SearchAutoComplete, SearchButton, SearchField } from ".";
 
 import type { ITag } from "../types";
 
-export const Search = () => {
+interface IProps {
+  initialValue?: string;
+}
+
+export const Search = (props: IProps) => {
+  const { initialValue } = props;
   const [submitValue, setSubmitValue] = React.useState<ITag | undefined>(
     undefined
   );
@@ -18,6 +23,7 @@ export const Search = () => {
       <Downshift
         onChange={(tag) => setSubmitValue(tag)}
         itemToString={(tag) => itemToString(tag)}
+        initialInputValue={initialValue}
       >
         {({
           getInputProps,
@@ -32,7 +38,8 @@ export const Search = () => {
             (tag) => !inputValue || tag.label.includes(inputValue)
           );
           const isVisible = !!(inputValue && inputValue.length > 2 && isOpen);
-          const isSubmittable = selectedItem && selectedItem.label === inputValue;
+          const isSubmittable =
+            selectedItem && selectedItem.label === inputValue;
 
           return (
             <>

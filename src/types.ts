@@ -2,6 +2,8 @@ export interface ITag {
   id: string;
   label: string;
   slug: string;
-  plantIds: string[];
-  plantCount: number
+  plantIds: PlantIds;
+  plantCount: number;
 }
+
+export type PlantIds = string[];

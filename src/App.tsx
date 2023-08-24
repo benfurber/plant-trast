@@ -6,12 +6,13 @@ import Helmet from "react-helmet";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import normalize from "./styles/normalize";
-import { Header, Home } from "./components";
+import { Header, Home, ErrorPage } from "./components";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrorPage />,
   },
 ]);
 

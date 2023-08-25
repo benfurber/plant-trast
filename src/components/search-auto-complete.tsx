@@ -1,19 +1,45 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-import { colors, dimensions } from "../styles/variables";
+import { colors, dimensions, fonts } from "../styles/variables";
 
 import type { PropGetters } from "downshift";
 import type { ITag } from "../types";
 
-const { componentPadding } = dimensions;
-const { light } = colors.gray;
 const StyledContainer = styled.div`
-  background: ${light};
-  padding: ${componentPadding}rem;
-  width: 100%;
+  background: ${colors.gray.light};
+  border-radius: 0 0 5px 5px;
   max-height: 250px;
   overflow: scroll;
+  padding: ${dimensions.componentPadding}rem;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+`;
+
+const StyledSpan = styled.span`
+  font-family: ${fonts.titles};
+  font-size: ${dimensions.headingSizes.h5}rem;
+  font-weight: bold;
+`;
+
+const StyledUl = styled.ul`
+  list-style-type: none;
+  margin: ${dimensions.componentPadding / 2}rem 0;
+  padding: 0;
+`;
+
+const StyledLi = styled.li`
+  background-color: ${colors.white.transparent};
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 0 0 5px 0;
+
+  :hover {
+    background-color: ${colors.white.pure};
+    text-decoration: underline;
+  }
 `;
 
 interface IProps {
@@ -32,25 +58,25 @@ export const SearchAutoComplete = (props: IProps) => {
 
   if (isVisible && filteredTags.length > 0) {
     return (
-      <StyledContainer>
-        <span>
-          <strong>Plants to compare:</strong>
-        </span>
-        <ul {...getMenuProps()}>
-          {filteredTags.map((item, index) => (
-            <li
-              {...getItemProps({
-                key: item.id,
-                index,
-                item,
-                style,
-              })}
-            >
-              <a>{`${item.label} (${item.plantCount})`}</a>
-            </li>
-          ))}
-        </ul>
-      </StyledContainer>
+      <div style={{ position: "relative" }}>
+        <StyledContainer>
+          <StyledSpan>Plants to compare</StyledSpan>
+          <StyledUl {...getMenuProps()}>
+            {filteredTags.map((item, index) => (
+                <StyledLi
+                  {...getItemProps({
+                    key: item.id,
+                    index,
+                    item,
+                    style,
+                  })}
+                >
+                  {`${item.label} (${item.plantCount})`}
+                </StyledLi>
+            ))}
+          </StyledUl>
+        </StyledContainer>
+      </div>
     );
   }
 

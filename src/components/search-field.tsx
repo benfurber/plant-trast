@@ -5,9 +5,8 @@ import { dimensions } from "../styles/variables";
 
 import type { PropGetters } from "downshift";
 
-const { componentPadding } = dimensions;
 const StyledInput = styled.input`
-  padding: ${componentPadding}rem;
+  padding: ${dimensions.componentPadding}rem;
   width: 100%;
 `;
 

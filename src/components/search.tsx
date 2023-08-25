@@ -34,9 +34,9 @@ export const Search = (props: IProps) => {
           selectedItem,
           getRootProps,
         }) => {
-          const filteredTags = tags.filter(
-            (tag) => !inputValue || tag.label.includes(inputValue)
-          );
+          const filteredTags = tags
+            .filter((tag) => !inputValue || tag.label.includes(inputValue))
+            .sort((a, b) => b.plantCount - a.plantCount);
           const isVisible = !!(inputValue && inputValue.length > 2 && isOpen);
           const isSubmittable =
             selectedItem && selectedItem.label === inputValue;

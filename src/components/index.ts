@@ -1,4 +1,5 @@
 export { Body } from "./body";
+export { Button } from "./button";
 export { ErrorPage } from "./error-page";
 export { Header } from "./header";
 export { Home } from "./home";

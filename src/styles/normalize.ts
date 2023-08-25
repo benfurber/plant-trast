@@ -11,7 +11,7 @@ export default `
     box-sizing: inherit;
   }
   html {
-    font-size: ${dimensions.fontSize.regular}px !important;
+    font-size: ${dimensions.fontSize.regular}rem !important;
     line-height: ${dimensions.lineHeight.regular} !important;
   }
   body {

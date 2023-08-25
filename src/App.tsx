@@ -7,7 +7,7 @@ import Helmet from "react-helmet";
 import normalize from "./styles/normalize";
 import { Header, RouterProvider } from "./components";
 
-setConfiguration({ maxScreenClass: "lg" });
+setConfiguration({ maxScreenClass: "xl" });
 const RootLayout = styled.div`
   display: flex;
   flex-direction: column;

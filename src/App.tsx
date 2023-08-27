@@ -5,7 +5,7 @@ import { setConfiguration } from "react-grid-system";
 import Helmet from "react-helmet";
 
 import normalize from "./styles/normalize";
-import { Header, RouterProvider } from "./components";
+import { FeedbackBanner, Header, RouterProvider } from "./components";
 
 setConfiguration({ maxScreenClass: "xl" });
 const RootLayout = styled.div`
@@ -26,6 +26,7 @@ function App() {
         ]}
       />
       <Global styles={() => css(normalize)} />
+      <FeedbackBanner />
       <Header />
       <RouterProvider />
     </RootLayout>

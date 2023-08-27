@@ -1,6 +1,7 @@
 export { Body } from "./body";
 export { Button } from "./button";
 export { ErrorPage } from "./error-page";
+export { FeedbackBanner } from "./feedback-banner";
 export { Header } from "./header";
 export { Home } from "./home";
 export { Logo } from "./logo";

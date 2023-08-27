@@ -26,6 +26,7 @@ export default `
     color: ${colors.black};
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    margin: 0;
   }
   a {
     color: ${colors.brand};

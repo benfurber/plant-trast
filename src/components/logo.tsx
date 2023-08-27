@@ -1,6 +1,7 @@
 import * as React from "react";
 import styled from "@emotion/styled";
 
+import { LeafIcon } from "."
 import { siteWide } from "../labels";
 import { dimensions, spacing } from "../styles/variables";
 
@@ -24,6 +25,7 @@ const Text = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: ${spacing.small}em;
+  padding-left: ${spacing.small}em;
 `;
 
 const Title = styled.h1`
@@ -40,6 +42,7 @@ const TitleBold = styled.span`
 
 const Logo: React.FC<{}> = () => (
   <HomepageLink>
+    <LeafIcon />
     <Text>
       <Title>
         <TitleBold>Plant</TitleBold>-trast

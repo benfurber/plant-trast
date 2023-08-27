@@ -4,6 +4,7 @@ export { ErrorPage } from "./error-page";
 export { FeedbackBanner } from "./feedback-banner";
 export { Header } from "./header";
 export { Home } from "./home";
+export { LeafIcon } from "./leaf-icon";
 export { Logo } from "./logo";
 export { PlantItem } from "./plant-item";
 export { PlantList } from "./plant-list";

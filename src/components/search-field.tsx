@@ -6,8 +6,10 @@ import { dimensions } from "../styles/variables";
 import type { PropGetters } from "downshift";
 
 const StyledInput = styled.input`
+  border: 0;
   padding: ${dimensions.componentPadding}rem;
   width: 100%;
+  height: 100%;
 `;
 
 interface IProps {

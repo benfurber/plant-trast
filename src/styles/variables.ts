@@ -18,6 +18,7 @@ export const colors = {
   gray: {
     calm: "rgba(0, 0, 0, 0.54)",
     light: "#eee",
+    faint: "#f2f2f2",
   },
   white: {
     pure: "#fff",
@@ -66,6 +67,7 @@ export const dimensions = {
   },
   containerPadding: 1.5,
   componentPadding: 1,
+  borderRadius: 5,
 };
 
 export const heights = {

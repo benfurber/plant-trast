@@ -7,12 +7,13 @@ import type { PropGetters } from "downshift";
 import type { ITag } from "../types";
 
 const StyledContainer = styled.div`
-  background: ${colors.gray.light};
-  border-radius: 0 0 5px 5px;
+  background-color: ${colors.gray.light};
+  border-radius: 5px;
   max-height: 250px;
-  overflow: scroll;
+  overflow: overlay;
   padding: ${dimensions.componentPadding}rem;
   position: absolute;
+  scrollbar-color: ${colors.brand.transparent} ${colors.gray.light};
   width: 100%;
   z-index: 1;
 `;
@@ -49,6 +50,14 @@ interface IProps {
   isVisible: boolean;
 }
 
+const Container = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
+  return (
+    <div style={{ position: "relative" }}>
+      <StyledContainer>{children}</StyledContainer>
+    </div>
+  );
+};
+
 export const SearchAutoComplete = (props: IProps) => {
   const { filteredTags, getItemProps, getMenuProps, isVisible } = props;
 
@@ -58,33 +67,31 @@ export const SearchAutoComplete = (props: IProps) => {
 
   if (isVisible && filteredTags.length > 0) {
     return (
-      <div style={{ position: "relative" }}>
-        <StyledContainer>
-          <StyledSpan>Plants to compare</StyledSpan>
-          <StyledUl {...getMenuProps()}>
-            {filteredTags.map((item, index) => (
-                <StyledLi
-                  {...getItemProps({
-                    key: item.id,
-                    index,
-                    item,
-                    style,
-                  })}
-                >
-                  {`${item.label} (${item.plantCount})`}
-                </StyledLi>
-            ))}
-          </StyledUl>
-        </StyledContainer>
-      </div>
+      <Container>
+        <StyledSpan>Plants to compare</StyledSpan>
+        <StyledUl {...getMenuProps()}>
+          {filteredTags.map((item, index) => (
+            <StyledLi
+              {...getItemProps({
+                key: item.id,
+                index,
+                item,
+                style,
+              })}
+            >
+              {`${item.label} (${item.plantCount})`}
+            </StyledLi>
+          ))}
+        </StyledUl>
+      </Container>
     );
   }
 
   return (
-    <StyledContainer>
-      <span>
+    <Container>
+      <StyledSpan>
         <i>No plants with that phrase, try another.</i>
-      </span>
-    </StyledContainer>
+      </StyledSpan>
+    </Container>
   );
 };

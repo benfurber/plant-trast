@@ -14,7 +14,7 @@ const Header: React.FC<{}> = () => {
     <StyledHeader>
       <Container>
         <Row justify="center">
-          <Col sm={10}>
+          <Col sm={12}>
             <Logo />
           </Col>
         </Row>

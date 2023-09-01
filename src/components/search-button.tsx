@@ -9,7 +9,7 @@ interface IProps {
   submitValue: ITag | undefined;
 }
 
-const LABEL = "Search Plants";
+const LABEL = "Search";
 
 export const SearchButton = (props: IProps) => {
   const { isSubmittable, submitValue } = props;

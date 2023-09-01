@@ -17,7 +17,7 @@ export const TagPage = () => {
     <Body>
       <Search initialValue={tag.label} />
       <Row justify="center">
-        <Col sm={10}>
+        <Col sm={12}>
           <h3 data-cy="tag-title">
             {label} ({plantCount})
           </h3>

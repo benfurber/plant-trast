@@ -3,8 +3,9 @@ import styled from "@emotion/styled";
 import Downshift from "downshift";
 import { Col, Row } from "react-grid-system";
 
-import { colors, dimensions } from "../styles/variables";
 import { tags } from "../data/tags";
+import { colors, dimensions } from "../styles/variables";
+import { filterTags } from "../utils";
 import { SearchAutoComplete, SearchButton, SearchField } from ".";
 
 import type { ITag } from "../types";
@@ -51,9 +52,7 @@ export const Search = (props: IProps) => {
             selectedItem,
             getRootProps,
           }) => {
-            const filteredTags = tags
-              .filter((tag) => !inputValue || tag.label.includes(inputValue))
-              .sort((a, b) => b.plantCount - a.plantCount);
+            const filteredTags = filterTags(tags, inputValue)
             const isVisible = !!(inputValue && inputValue.length > 2 && isOpen);
             const isSubmittable =
               selectedItem && selectedItem.label === inputValue;

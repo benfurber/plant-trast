@@ -6,6 +6,7 @@ import Helmet from "react-helmet";
 
 import normalize from "./styles/normalize";
 import { FeedbackBanner, Header, RouterProvider } from "./components";
+import { title } from "./labels"
 
 setConfiguration({ maxScreenClass: "xl" });
 const RootLayout = styled.div`
@@ -24,6 +25,7 @@ function App() {
             rel: "stylesheet",
           },
         ]}
+        title={title}
       />
       <Global styles={() => css(normalize)} />
       <FeedbackBanner />
